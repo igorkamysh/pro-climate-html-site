@@ -1,32 +1,362 @@
-# Охлаждение дата-центров
-Title: TODO — добавить утвержденный заголовок для страницы ЦОД
-Description: TODO — добавить описание от заказчика для страницы об охлаждении дата-центров.
+<!-- DC COOLING HERO -->
+<section class="hero hero--dc" id="dc-cooling">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow">Охлаждение ЦОД • CRAC/CRAH • Liquid Cooling • D2C</p>
+        <h1 class="h1">Охлаждение ЦОД, рассчитанное на плотность, а не на надежду.</h1>
+        <p class="lead">
+          Рециркуляционные (прецизионные) кондиционеры, коридорное разделение, чиллерные контуры, а также liquid cooling:
+          CDU, manifolds, quick-disconnect и D2C (direct-to-chip) для стоек высокой плотности.
+        </p>
 
-Summary:
-- TODO: заполнить краткие пункты по ключевым преимуществам решения для ЦОД.
-- TODO: добавить факты об энергоэффективности и надежности.
-- TODO: уточнить подход к резервированию и мониторингу.
-- TODO: описать опыт внедрения без простоя.
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#dc-audit">Получить инженерный аудит</a>
+          <a class="btn btn--ghost" href="#dc-kpi">Проверить готовность к high density</a>
+        </div>
 
-What we do:
-TODO: добавить описание услуг и работ для дата-центров из согласованного источника.
+        <ul class="hero__proof">
+          <li>Проектирование / модернизация / сервис 24×7 по SLA</li>
+          <li>Надёжность: N, N+1 / резервирование контуров и питания</li>
+          <li>Комиссионинг: измерения, отчётность, ввод в эксплуатацию</li>
+        </ul>
+      </div>
 
-Who it's for:
-TODO: указать целевые аудитории (операторы ЦОД, интеграторы и др.) после согласования.
+      <div class="hero__media">
+        <div class="media-card">
+          <p class="media-card__title">Куда вы идёте: 10–60+ кВт на стойку</p>
+          <p class="media-card__text">
+            Воздух ещё работает — но не везде. Liquid cooling снимает ограничения по плотности и PUE.
+          </p>
+          <a class="link" href="#dc-architecture">Схема решений →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-How it works:
-TODO: расписать этапы работ для проектов охлаждения ЦОД.
+<!-- QUICK NAV / TOC -->
+<nav class="toc" aria-label="Навигация по странице">
+  <div class="container">
+    <ul class="toc__list">
+      <li><a href="#dc-what">Что мы делаем</a></li>
+      <li><a href="#dc-architecture">Архитектуры</a></li>
+      <li><a href="#dc-d2c">D2C: как внедряем</a></li>
+      <li><a href="#dc-process">Этапы проекта</a></li>
+      <li><a href="#dc-faq">FAQ</a></li>
+      <li><a href="#dc-audit">CTA</a></li>
+    </ul>
+  </div>
+</nav>
 
-Deliverables:
-TODO: перечислить результаты проекта (документация, расчеты, мониторинг) после предоставления данных.
+<!-- WHAT WE DO -->
+<section class="section" id="dc-what">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Охлаждение ЦОД “под ключ”</h2>
+      <p class="subhead">От классических прецизионных систем до гибридной и полностью жидкостной архитектуры.</p>
+    </header>
 
-Key terms:
-TODO, ЦОД, охлаждение, PUE, резервирование, мониторинг, direct-to-chip, иммерсия, гидравлика, SLA, TCO, ROI.
+    <div class="grid grid--3">
+      <article class="card">
+        <h3 class="h3">Прецизионное охлаждение (CRAC/CRAH)</h3>
+        <p>DX/чиллерные, с рециркуляцией, контролем влажности и точной автоматикой.</p>
+        <ul class="bullets">
+          <li>подбор по тепловой нагрузке и резервированию</li>
+          <li>in-row / perimeter, подфальшпол / верхняя подача</li>
+          <li>ввод в режимы: расход, ΔT, точки росы</li>
+        </ul>
+      </article>
 
-FAQ:
-Q: TODO — добавить вопрос для ЦОД.
-A: TODO — добавить ответ после утверждения.
-Q: TODO — добавить второй вопрос.
-A: TODO — добавить второй ответ.
-Q: TODO — добавить третий вопрос.
-A: TODO — добавить третий ответ.
+      <article class="card">
+        <h3 class="h3">Airflow management</h3>
+        <p>Чтобы холод попадал в сервер, а не “в потолок”.</p>
+        <ul class="bullets">
+          <li>горячий/холодный коридор, containment</li>
+          <li>уплотнение проходов, заглушки, кабельные вводы</li>
+          <li>балансировка, устранение рециркуляции/байпаса</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3 class="h3">Liquid cooling и гибрид</h3>
+        <p>CDU, коллекторы, QD-коннекторы, D2C — для стоек высокой плотности.</p>
+        <ul class="bullets">
+          <li>связка facility water ↔ CDU ↔ стойки</li>
+          <li>утечки: датчики, поддоны, сценарии аварий</li>
+          <li>переход без остановки: по зонам/кластерам</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="section section--muted" id="dc-architecture">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Архитектуры: что выбирают на практике</h2>
+      <p class="subhead">Мы не продаём “одну правильную схему”. Мы собираем систему под вашу плотность, SLA и бюджет.</p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="h3">1) Воздух (baseline)</h3>
+        <p><strong>Когда подходит:</strong> умеренная плотность, много универсальных стоек, ставка на простоту.</p>
+        <ul class="bullets">
+          <li>CRAC/CRAH + containment</li>
+          <li>чёткие режимы по температуре/влажности</li>
+          <li>резерв N+1 и корректная диспетчеризация</li>
+        </ul>
+        <p class="note"><strong>Ограничение:</strong> рост kW/стойка быстро упирается в airflow и акустику.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">2) Гибрид (air + liquid)</h3>
+        <p><strong>Когда подходит:</strong> часть стоек становится “горячей” (AI/HPC), остальным достаточно воздуха.</p>
+        <ul class="bullets">
+          <li>D2C для горячих кластеров</li>
+          <li>воздух — на остаточное тепло (fans/PSU/память)</li>
+          <li>плавная модернизация без полной перестройки ЦОД</li>
+        </ul>
+        <p class="note"><strong>Плюс:</strong> лучший путь “в будущее” без риска остановки бизнеса.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">3) Liquid-first (high density)</h3>
+        <p><strong>Когда подходит:</strong> 30–60+ кВт на стойку, приоритет — плотность и энергоэффективность.</p>
+        <ul class="bullets">
+          <li>CDU на ряд/стойку, коллекторы, QD</li>
+          <li>возможность “warm water” контуров</li>
+          <li>жёсткие требования к воде и сервису</li>
+        </ul>
+        <p class="note"><strong>Важно:</strong> требуется дисциплина эксплуатации и грамотный комиссионинг.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">4) Опции: иммерсия / диэлектрик</h3>
+        <p><strong>Когда подходит:</strong> спец-задачи, экстремальная плотность, нестандартные ограничения.</p>
+        <ul class="bullets">
+          <li>проектирование рисков и регламентов</li>
+          <li>проработка логистики обслуживания</li>
+          <li>экология, утилизация, безопасность</li>
+        </ul>
+        <p class="note"><strong>Честно:</strong> это не “магия”, а инженерия + строгие процессы.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- D2C SECTION -->
+<section class="section" id="dc-d2c">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">D2C (Direct-to-Chip): внедрение без хаоса</h2>
+      <p class="subhead">Жидкость на чип — это выигрыш, если правильно спроектированы контуры, безопасность и обслуживание.</p>
+    </header>
+
+    <div class="grid grid--3">
+      <article class="card">
+        <h3 class="h3">Тепловая модель</h3>
+        <ul class="bullets">
+          <li>профиль нагрузок (GPU/CPU), пиковые режимы</li>
+          <li>целевые температуры, ΔT, расход</li>
+          <li>оценка остаточного тепла для воздуха</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3 class="h3">Гидравлика и качество воды</h3>
+        <ul class="bullets">
+          <li>facility loop ↔ теплообменник/CDU</li>
+          <li>фильтрация, ингибиторы, контроль проводимости</li>
+          <li>материалы, совместимость, коррозионные риски</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3 class="h3">Безопасность и SLA</h3>
+        <ul class="bullets">
+          <li>датчики утечки + сценарии аварий</li>
+          <li>быстросъёмы (QD), сервисные зоны</li>
+          <li>регламент и запас по узлам (помпы, фильтры)</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="note">
+      <p><strong>Результат:</strong> понятная схема “что куда течёт”, где стоят защиты, как обслуживать стойку, и что делать при аварии — без героизма.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section section--muted" id="dc-process">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Как мы работаем</h2>
+      <p class="subhead">Процесс заточен под ЦОД: измерения, контроль рисков, документы, ввод в режимы.</p>
+    </header>
+
+    <ol class="steps">
+      <li class="steps__item">
+        <h3 class="h3">1) Обследование и сбор данных</h3>
+        <p>Нагрузки, стойки, планы, существующие контуры, ограничение по электрике, требования по SLA.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">2) Концепция (варианты 2–3)</h3>
+        <p>Воздух / гибрид / liquid-first: бюджет, сроки, риски, эффект по температурным режимам и энергоэффективности.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">3) Проектирование и спецификация</h3>
+        <p>Схемы, автоматика, резервирование, подбор узлов (CRAC/CRAH, чиллер, CDU, manifolds, QD), ведомости.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">4) Монтаж / интеграция</h3>
+        <p>С допусками и безопасностью. Разводка контуров, обвязка, датчики, диспетчеризация.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">5) Комиссионинг</h3>
+        <p>Опрессовка, промывка/фильтрация, настройка режимов, тест резервирования, отчёт с параметрами.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">6) Сервис 24×7 (опционально)</h3>
+        <p>Регламент, аварийные выезды, запас критических узлов, отчётность для эксплуатации и аудита.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- KPI / READINESS CHECK -->
+<section class="section" id="dc-kpi">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Быстрая проверка готовности ЦОД к high density</h2>
+      <p class="subhead">Если на 2–3 пункта ответ “нет” — модернизацию лучше начинать с инженерного аудита.</p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="h3">По воздуху</h3>
+        <ul class="checklist">
+          <li>есть containment или управляемые потоки без рециркуляции</li>
+          <li>известны реальные температуры на входе в сервер (не “в среднем по залу”)</li>
+          <li>есть сценарии отказа (1 кондиционер/1 чиллер/1 насос)</li>
+          <li>балансировка выполнена и задокументирована</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="h3">По liquid / D2C</h3>
+        <ul class="checklist">
+          <li>понятен facility loop и его доступная мощность/температура</li>
+          <li>определены требования к воде (фильтрация/ингибиторы/контроль)</li>
+          <li>есть план утечек: датчики + действия персонала</li>
+          <li>продумано обслуживание стойки и доступность QD/узлов</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--muted" id="dc-faq">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">FAQ</h2>
+      <p class="subhead">Коротко и по делу — без маркетингового тумана.</p>
+    </header>
+
+    <div class="faq">
+      <details class="faq__item">
+        <summary>Рециркуляционные (прецизионные) кондиционеры — это обязательно?</summary>
+        <div class="faq__content">
+          <p>
+            Для ЦОД почти всегда да: нужна точность по режимам, прогнозируемость, автоматика и резервирование.
+            Но иногда правильный “airflow management” даёт эффект не хуже, чем добавление ещё одного блока.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary>С какого уровня мощности стоит смотреть в сторону D2C?</summary>
+        <div class="faq__content">
+          <p>
+            Обычно тогда, когда стойки начинают стабильно уходить в high density (AI/HPC),
+            и воздух превращается в дорогую борьбу с потоками и шумом. Мы подтверждаем это измерениями и тепловой моделью.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary>Liquid cooling = риск утечек. Как вы это закрываете?</summary>
+        <div class="faq__content">
+          <p>
+            Инженерно: правильные контуры, материалы, QD, датчики и сценарии действий. Организационно: регламент,
+            обучение и сервис. Утечка — это не “катастрофа”, если система к ней готова.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary>Вы делаете сервис 24×7 по SLA?</summary>
+        <div class="faq__content">
+          <p>
+            Да, опционально: регламентное ТО, аварийные выезды, отчётность, контроль параметров, запас критических узлов.
+            SLA и состав работ фиксируем в договоре.
+          </p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta" id="dc-audit">
+  <div class="container">
+    <div class="cta__box">
+      <h2 class="h2">Нужен расчёт или аудит охлаждения ЦОД?</h2>
+      <p class="lead">
+        Пришлите 3 вещи — и мы дадим понятный план действий: <strong>мощности стоек</strong>, <strong>схему зала</strong>,
+        <strong>описание текущего охлаждения</strong>. Можно без идеальных документов — разберёмся.
+      </p>
+
+      <div class="cta__actions">
+        <a class="btn btn--primary" href="{{crm_link}}">Оставить заявку</a>
+        <a class="btn btn--ghost" href="tel:{{phone}}">Позвонить: {{phone_pretty}}</a>
+      </div>
+
+      <p class="cta__meta">
+        Ответим в течение {{hours}} часов. Работаем по договору. Документы, допуски, исполнительная — всё будет.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SEO: GLOSSARY (LLM-friendly) -->
+<section class="section" id="dc-glossary">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Термины простыми словами</h2>
+      <p class="subhead">Полезно и для людей, и для поиска (включая LLM).</p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="h3">CRAC / CRAH</h3>
+        <p><strong>CRAC</strong> — прецизионный кондиционер (часто DX). <strong>CRAH</strong> — прецизионный обработчик воздуха с водяным охлаждением.</p>
+      </div>
+      <div class="card">
+        <h3 class="h3">Containment</h3>
+        <p>Изоляция горячего/холодного коридора, чтобы воздух шёл туда, где нужна температура на входе в сервер.</p>
+      </div>
+      <div class="card">
+        <h3 class="h3">CDU</h3>
+        <p>Cooling Distribution Unit — узел, который связывает “воду здания” с контуром стойки и держит нужные параметры.</p>
+      </div>
+      <div class="card">
+        <h3 class="h3">D2C</h3>
+        <p>Direct-to-Chip — жидкость напрямую снимает тепло с CPU/GPU через cold plate, снижая зависимость от воздуха.</p>
+      </div>
+    </div>
+  </div>
+</section>
