@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://pro.master52.ru/index.html</loc></url>
+  <url><loc>https://pro.master52.ru/vrf.html</loc></url>
+  <url><loc>https://pro.master52.ru/chiller.html</loc></url>
   <url><loc>https://pro.master52.ru/data-centre.html</loc></url>
   <url><loc>https://pro.master52.ru/monitoring.html</loc></url>
   <url><loc>https://pro.master52.ru/natural-refrigerant.html</loc></url>
-  <url><loc>https://pro.master52.ru/hvac-aas.html</loc></url>
+  <url><loc>https://pro.master52.ru/hvacaas.html</loc></url>
 </urlset>

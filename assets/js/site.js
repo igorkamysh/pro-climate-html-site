@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    
+
     // --- 1. ЗАГРУЗКА PARTIALS (Header, Footer, CTA) ---
     async function loadPart(id, path) {
         const el = document.getElementById(id);
@@ -51,33 +51,29 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // --- 4. АНИМАЦИИ (Intersection Observer) ---
-    const observer = new IntersectionObserver((entries) => {
+    const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if(entry.isIntersecting) {
-                
-                // EBITDA Counter
+                entry.target.classList.add('visible');
+
                 const counter = document.getElementById('ebitda-num');
-                if(counter && !counter.dataset.done) {
-                    let c = 4;
+                if(counter && entry.target.contains(counter) && !counter.dataset.done) {
+                    let c = 5;
                     const t = setInterval(() => {
                         c++; counter.innerText = c + 'x';
-                        if(c >= 15) clearInterval(t);
-                    }, 80);
+                        if(c >= 12) clearInterval(t);
+                    }, 120);
                     counter.dataset.done = true;
                 }
 
-                // GWP Bars
-                document.querySelectorAll('.gwp-bar').forEach(bar => {
-                    bar.style.width = bar.dataset.width;
-                });
+                document.querySelectorAll('.gwp-bar').forEach(bar => { bar.style.width = bar.dataset.width; });
 
-                observer.unobserve(entry.target);
+                revealObserver.unobserve(entry.target);
             }
         });
-    });
+    }, { threshold: 0.2 });
 
-    const darkBlock = document.querySelector('.dark-section');
-    if(darkBlock) observer.observe(darkBlock);
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
     // Live Sensor Animation
     const sensorBox = document.getElementById('sensor-viz');
@@ -102,4 +98,88 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         }, 150);
     }
+
+    // --- 5. Аккордеоны ---
+    document.querySelectorAll('[data-accordion]').forEach(acc => {
+        acc.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                acc.querySelectorAll('button').forEach(b => b.setAttribute('aria-expanded', 'false'));
+                acc.querySelectorAll('.accordion-panel').forEach(p => p.classList.remove('open'));
+                if(!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    });
+
+    // --- 6. Табы ---
+    document.querySelectorAll('.tab-buttons').forEach(group => {
+        group.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const controls = btn.getAttribute('aria-controls');
+                group.querySelectorAll('button').forEach(b => b.setAttribute('aria-selected', 'false'));
+                btn.setAttribute('aria-selected', 'true');
+                const panels = group.parentElement.querySelectorAll('.tab-panel');
+                panels.forEach(p => p.classList.remove('active'));
+                const activePanel = group.parentElement.querySelector('#' + controls);
+                if(activePanel) activePanel.classList.add('active');
+            });
+        });
+    });
+
+    // --- 7. Калькуляторы ---
+    const format = (val) => new Intl.NumberFormat('ru-RU').format(Math.round(val));
+    document.querySelectorAll('[data-calculator]').forEach(calc => {
+        const output = calc.querySelector('.calc-output');
+        const type = calc.dataset.calculator;
+        const handler = () => {
+            let message = '';
+            if(type === 'home') {
+                const area = Number(calc.querySelector('#area')?.value || 0);
+                const tariff = Number(calc.querySelector('#tariff')?.value || 0);
+                const saving = Number(calc.querySelector('#saving')?.value || 0);
+                const baseKwh = area * 1.1;
+                const savedKwh = baseKwh * (saving/100);
+                const savedRub = savedKwh * tariff;
+                message = `Экономия: ${format(savedRub)} ₽ в месяц при снижении ${saving}% (≈ ${format(savedKwh)} кВт·ч).`;
+            }
+            if(type === 'vrf') {
+                const area = Number(calc.querySelector('#vrf-area')?.value || 0);
+                const tariff = Number(calc.querySelector('#vrf-tariff')?.value || 0);
+                const split = Number(calc.querySelector('#vrf-split')?.value || 0);
+                const baseKwh = area * 0.9;
+                const savedKwh = baseKwh * (split/100) * 0.25;
+                const savedRub = savedKwh * tariff;
+                message = `Оценка экономии: ${format(savedRub)} ₽ в месяц за счет зонирования и точной автоматики.`;
+            }
+            if(type === 'chiller') {
+                const load = Number(calc.querySelector('#ch-load')?.value || 0);
+                const tariff = Number(calc.querySelector('#ch-tariff')?.value || 0);
+                const hrs = Number(calc.querySelector('#ch-hrs')?.value || 0);
+                const energy = load * hrs;
+                const effect = energy * 0.08;
+                const savedRub = effect * tariff;
+                message = `Балансировка может дать экономию до ${format(savedRub)} ₽ (≈ ${format(effect)} кВт·ч) в месяц.`;
+            }
+            if(output && message) output.textContent = message;
+        };
+        calc.querySelectorAll('input, select').forEach(inp => inp.addEventListener('input', handler));
+        handler();
+    });
+
+    // --- 8. Copy to clipboard ---
+    document.querySelectorAll('[data-copy]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+            const text = btn.dataset.copy;
+            try {
+                await navigator.clipboard.writeText(text);
+                btn.textContent = 'Скопировано';
+                setTimeout(() => btn.textContent = text.includes('@') ? 'Скопировать e-mail' : 'Скопировать телефон', 1500);
+            } catch(e) {
+                btn.textContent = text;
+            }
+        });
+    });
 });

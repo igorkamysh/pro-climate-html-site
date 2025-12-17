@@ -39,7 +39,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     color: var(--c-text-main);
     background-color: var(--c-bg-body);
     line-height: 1.6;
@@ -53,7 +53,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope', 'Inter', system-ui, sans-serif;
     font-weight: 800;
     color: var(--c-primary);
     line-height: 1.2;
@@ -117,8 +117,8 @@ header {
 .breadcrumbs a:hover { color: var(--c-secondary); }
 .breadcrumbs span { margin: 0 10px; color: #D1D5DB; }
 
-.hero-title { font-size: 3.5rem; margin-bottom: 24px; letter-spacing: -1.5px; }
-.hero-desc { font-size: 1.25rem; max-width: 750px; margin-bottom: 35px; color: var(--c-text-light); }
+.hero-title { font-size: clamp(2.1rem, 4vw, 3.5rem); margin-bottom: 24px; letter-spacing: -1.5px; }
+.hero-desc { font-size: clamp(1.05rem, 2vw, 1.3rem); max-width: 780px; margin-bottom: 35px; color: var(--c-text-light); }
 
 .badges { display: flex; gap: 12px; flex-wrap: wrap; }
 .badge { 
@@ -170,6 +170,7 @@ header {
    ========================================================================== */
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.grid-responsive { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 
 .card {
     background: white; padding: 32px; border-radius: var(--radius);
@@ -179,6 +180,45 @@ header {
 .card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--c-accent); }
 .card-accent { border-top: 4px solid var(--c-secondary); }
 .card h4 { font-size: 1.25rem; margin-bottom: 15px; }
+
+.pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: #ECFDF3; color: var(--c-secondary); font-weight: 700; font-size: 0.9rem; }
+
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 24px 0; }
+.summary-item { background: var(--c-bg-gray); padding: 16px 18px; border-radius: 12px; font-weight: 600; color: var(--c-text-main); border: 1px solid var(--c-border); }
+
+.feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.feature { display: flex; gap: 14px; padding: 18px; border: 1px solid var(--c-border); border-radius: 12px; background: white; box-shadow: var(--shadow-sm); }
+.feature svg { width: 24px; height: 24px; color: var(--c-secondary); flex-shrink: 0; }
+
+.tab-buttons { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-bottom: 16px; }
+.tab-buttons button { padding: 12px 16px; border-radius: 10px; border: 1px solid var(--c-border); background: white; font-weight: 700; color: var(--c-text-main); cursor: pointer; transition: var(--transition); }
+.tab-buttons button[aria-selected="true"] { background: #ECFDF3; border-color: var(--c-secondary); color: var(--c-primary); box-shadow: var(--shadow-sm); }
+
+.tab-panel { display: none; border: 1px solid var(--c-border); border-radius: 12px; padding: 20px; background: white; }
+.tab-panel.active { display: block; }
+
+.accordion { border: 1px solid var(--c-border); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-sm); }
+.accordion-item + .accordion-item { border-top: 1px solid var(--c-border); }
+.accordion button { width: 100%; text-align: left; padding: 18px 20px; background: white; border: none; font-weight: 700; font-size: 1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+.accordion button:focus-visible { outline: 3px solid var(--c-secondary); outline-offset: 2px; }
+.accordion .icon { transition: transform 0.3s ease; }
+.accordion [aria-expanded="true"] .icon { transform: rotate(45deg); }
+.accordion-panel { padding: 0 20px 18px; color: var(--c-text-light); display: none; }
+.accordion-panel.open { display: block; }
+
+.calc-card { padding: 20px; border: 1px solid var(--c-border); border-radius: 14px; background: white; box-shadow: var(--shadow-sm); }
+.calc-card label { display: block; font-weight: 700; margin-bottom: 6px; }
+.calc-card input, .calc-card select { width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--c-border); margin-bottom: 12px; }
+.calc-output { background: #ECFDF3; border: 1px solid var(--c-secondary); padding: 14px; border-radius: 10px; font-weight: 700; color: var(--c-primary); }
+
+.key-terms { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.key-terms span { padding: 10px 14px; background: var(--c-bg-gray); border-radius: 12px; border: 1px solid var(--c-border); font-weight: 700; color: var(--c-text-main); }
+
+.sticky-cta { position: fixed; bottom: 20px; right: 20px; background: var(--c-primary); color: white; padding: 14px 18px; border-radius: 14px; display: flex; align-items: center; gap: 10px; box-shadow: var(--shadow-hover); z-index: 999; }
+.sticky-cta button { background: white; color: var(--c-primary); border: none; padding: 8px 12px; border-radius: 10px; font-weight: 700; cursor: pointer; }
+
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* Списки с галочками */
 .list-check li { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 12px; }
@@ -266,4 +306,18 @@ footer {
     .nav { display: none; } /* Скрываем меню на моб */
     .grid-2, .grid-3, .footer-cols { grid-template-columns: 1fr; gap: 30px; }
     .cta-card { padding: 30px; }
+}
+
+@media (max-width: 640px) {
+    :root { --section-gap: 72px; }
+    .hero { padding: 80px 0 60px; }
+    .hero-desc { margin-bottom: 24px; }
+    .sticky-cta { left: 16px; right: 16px; justify-content: space-between; }
+}
+
+@media (max-width: 480px) {
+    .badge { font-size: 0.8rem; }
+    .calc-card { padding: 16px; }
+    .tab-buttons { grid-template-columns: 1fr; }
+    .tab-buttons button { text-align: left; }
 }
