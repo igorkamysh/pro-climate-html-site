@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pro.master52.ru/sitemap.xml
