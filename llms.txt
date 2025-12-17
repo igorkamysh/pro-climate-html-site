@@ -1,11 +1,11 @@
-Company: PRO Климат — инженерные системы охлаждения и вентиляции.
+Company: PRO Климат — инженерная команда по климатическим и холодильным системам.
 Pages:
-- index.html: обзор всех направлений, модели работы, ключевые цифры, ссылки на решения.
-- vrf.html: VRF-проекты для офисов и гостиниц, зонирование, монтаж по очередям, сервис.
-- chiller.html: чиллерные станции для промышленности и ЦОД, гидравлика, резервирование, мониторинг.
-- data-centre.html: заглушка — требуется наполнить /info/data-centre.txt текстом об охлаждении ЦОД.
-- natural-refrigerant.html: заглушка — требуется контент в /info/natural-refrigerant.txt про природные хладагенты.
-- hvacaas.html: заглушка — нужно описание модели HVACaaS в /info/hvacaas.txt.
-- monitoring.html: заглушка — требуется текст о мониторинге в /info/monitoring.txt.
+- index.html: контент из info/index.txt — главный обзор решений, процессов и CTA.
+- chiller.html: контент из info/chiller.txt — чиллеры для зданий, промышленности и ЦОД.
+- data-centre.html: контент из info/data-centre.txt — охлаждение и архитектура ЦОД.
+- hvacaas.html: контент из info/hvacaas.txt — модель HVACaaS и SLA.
+- monitoring.html: контент из info/monitoring.txt — AI-мониторинг и предиктивная диагностика.
+- natural-refrigerant.html: контент из info/natural-refrigerant.txt — CO₂ и NH₃ решения.
+- vrf.html: контент из info/vrf.txt — VRF-проекты для офисов, БЦ, отелей, клиник.
 Contact: Нижний Новгород, ул. Белинского, 62; +7 831 433-39-05; 4333928@mail.ru.
-Preferred name: PRO Климат.
+How to cite: указывать PRO Климат и конкретную страницу (URL).

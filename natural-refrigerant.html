@@ -3,167 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO — добавить заголовок для страницы о природных хладагентах</title>
-    <meta name="description" content="TODO — добавить согласованное описание решений на CO₂ или NH₃.">
+    <title>Природные хладагенты — PRO Климат</title>
+    <meta name="description" content="CO₂ и NH₃ решения для холодоснабжения.">
     <link rel="canonical" href="https://pro.master52.ru/natural-refrigerant.html">
-    <meta property="og:title" content="TODO — добавить заголовок для страницы о природных хладагентах">
-    <meta property="og:description" content="TODO — добавить согласованное описание решений на CO₂ или NH₃.">
+    <meta property="og:title" content="Природные хладагенты — PRO Климат">
+    <meta property="og:description" content="CO₂ и NH₃ решения для холодоснабжения.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://pro.master52.ru/natural-refrigerant.html">
     <meta property="og:site_name" content="PRO Климат">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TODO — добавить заголовок для страницы о природных хладагентах">
-    <meta name="twitter:description" content="TODO — добавить согласованное описание решений на CO₂ или NH₃.">
+    <meta name="twitter:title" content="Природные хладагенты — PRO Климат">
+    <meta name="twitter:description" content="CO₂ и NH₃ решения для холодоснабжения.">
     <link rel="stylesheet" href="assets/css/site.css">
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Organization","name":"PRO Климат","url":"https://pro.master52.ru/","logo":"https://pro.master52.ru/assets/img/logo.svg","contactPoint":{"@type":"ContactPoint","telephone":"+7 831 433-39-05","contactType":"customer service","email":"4333928@mail.ru"},"address":{"@type":"PostalAddress","streetAddress":"ул. Белинского, 62","addressLocality":"Нижний Новгород","addressCountry":"RU"}}
-    </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebSite","url":"https://pro.master52.ru/","name":"PRO Климат","potentialAction":{"@type":"SearchAction","target":"https://pro.master52.ru/?q={search_term_string}","query-input":"required name=search_term_string"}}
-    </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://pro.master52.ru/index.html"},{"@type":"ListItem","position":2,"name":"Природные хладагенты","item":"https://pro.master52.ru/natural-refrigerant.html"}]}
-    </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"TODO — добавить вопрос по безопасности.","acceptedAnswer":{"@type":"Answer","text":"TODO — добавить ответ."}},{"@type":"Question","name":"TODO — добавить вопрос по срокам.","acceptedAnswer":{"@type":"Answer","text":"TODO — добавить ответ."}},{"@type":"Question","name":"TODO — добавить вопрос по нормативам.","acceptedAnswer":{"@type":"Answer","text":"TODO — добавить ответ."}}]}
-    </script>
 </head>
 <body>
     <div id="header-inj"></div>
     <main>
-        <section class="hero reveal" aria-labelledby="nr-title">
-            <div class="container">
-                <div class="breadcrumbs"><a href="/">Главная</a> <span>/</span> Природные хладагенты</div>
-                <div class="badges"><div class="badge">CO₂/NH₃</div><div class="badge">TODO</div></div>
-                <h1 id="nr-title" class="hero-title">TODO — добавить заголовок для страницы о природных хладагентах</h1>
-                <p class="hero-desc">TODO — добавить согласованное описание решений на CO₂ или NH₃.</p>
-                <div class="summary-grid" aria-label="Краткое резюме">
-                    <div class="summary-item">TODO: ключевые преимущества природных хладагентов.</div>
-                    <div class="summary-item">TODO: безопасность и нормативные аспекты.</div>
-                    <div class="summary-item">TODO: энергоэффективность и экологичность.</div>
-                    <div class="summary-item">TODO: опыт внедрения и мониторинга.</div>
+        <div class="container content-from-info" data-info="natural-refrigerant"></div>
+        <section class="card" aria-labelledby="chart-title" style="margin:40px auto; max-width:960px;">
+            <div class="grid-2" data-chart>
+                <div>
+                    <h2 id="chart-title">Сравнение владения хладагентом</h2>
+                    <p class="subhead">Настройте горизонты и допущения: расчёт только для оценки.</p>
+                    <label for="horizon">Горизонт, лет</label>
+                    <select id="horizon">
+                        <option value="5">5 лет</option>
+                        <option value="10">10 лет</option>
+                    </select>
+                    <label for="leak">Утечки, % в год</label>
+                    <input type="number" id="leak" data-leak min="0" max="25" step="0.5" value="5">
+                    <label for="price">Стоимость энергии, ₽/кВт·ч</label>
+                    <input type="number" id="price" data-price min="1" step="0.1" value="6">
                 </div>
-                <div class="pill">Добавьте контент в /info/natural-refrigerant.txt</div>
+                <div style="align-self:center;">
+                    <canvas width="420" height="260" aria-label="Диаграмма TCO" role="img"></canvas>
+                </div>
             </div>
         </section>
-
-        <div class="container content">
-            <div class="layout">
-                <aside class="sidebar" aria-label="Навигация по странице">
-                    <div class="side-label">Разделы</div>
-                    <div class="side-menu">
-                        <a href="#what">Что делаем</a>
-                        <a href="#who">Для кого</a>
-                        <a href="#process">Как работаем</a>
-                        <a href="#deliverables">Что получаете</a>
-                        <a href="#calculator">Расчет</a>
-                        <a href="#faq">FAQ</a>
-                        <a href="#terms">Ключевые термины</a>
-                        <a href="#todo">TODO</a>
-                    </div>
-                </aside>
-                <div class="content">
-                    <section id="what" class="reveal" aria-labelledby="what-nr">
-                        <h2 id="what-nr">Что мы делаем</h2>
-                        <p>TODO: добавить описание проектирования и сервисов по природным хладагентам.</p>
-                    </section>
-
-                    <section id="who" class="reveal" aria-labelledby="who-nr">
-                        <h2 id="who-nr">Для кого</h2>
-                        <p>TODO: перечислить типы объектов и заказчиков после согласования.</p>
-                    </section>
-
-                    <section id="process" class="reveal" aria-labelledby="process-nr">
-                        <h2 id="process-nr">Как мы работаем</h2>
-                        <div class="tab-buttons" role="tablist" aria-label="Этапы внедрения">
-                            <button role="tab" aria-selected="true" aria-controls="nr-tab1" id="nr-tab-btn1">Проект</button>
-                            <button role="tab" aria-selected="false" aria-controls="nr-tab2" id="nr-tab-btn2">Монтаж</button>
-                            <button role="tab" aria-selected="false" aria-controls="nr-tab3" id="nr-tab-btn3">Мониторинг</button>
-                        </div>
-                        <div id="nr-tab1" class="tab-panel active" role="tabpanel" aria-labelledby="nr-tab-btn1">TODO: описать этапы внедрения систем на природных хладагентах.</div>
-                        <div id="nr-tab2" class="tab-panel" role="tabpanel" aria-labelledby="nr-tab-btn2">TODO: описать этапы внедрения систем на природных хладагентах.</div>
-                        <div id="nr-tab3" class="tab-panel" role="tabpanel" aria-labelledby="nr-tab-btn3">TODO: описать этапы внедрения систем на природных хладагентах.</div>
-                    </section>
-
-                    <section id="deliverables" class="reveal" aria-labelledby="deliv-nr">
-                        <h2 id="deliv-nr">Что вы получаете</h2>
-                        <div class="grid-2">
-                            <div class="card">
-                                <h4>Документация</h4>
-                                <ul class="list-check">
-                                    <li><span class="icon-ok">✓</span><span>TODO: указать проектные материалы, расчеты и регламенты обслуживания.</span></li>
-                                    <li><span class="icon-ok">✓</span><span>TODO: добавить информацию о нормативных требованиях.</span></li>
-                                </ul>
-                            </div>
-                            <div class="card">
-                                <h4>Поддержка</h4>
-                                <ul class="list-check">
-                                    <li><span class="icon-ok">✓</span><span>TODO: описать мониторинг и контроль.</span></li>
-                                    <li><span class="icon-ok">✓</span><span>TODO: подтвердить режимы сервисного обслуживания.</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="calculator" class="reveal" aria-labelledby="calc-nr">
-                        <h2 id="calc-nr">Приблизительный расчет</h2>
-                        <p>Черновая оценка экономии при использовании природных хладагентов. Требует уточнения после получения данных.</p>
-                        <div class="calc-card" data-calculator="home">
-                            <label for="area">Площадь, м²</label>
-                            <input id="area" type="number" min="50" value="350" inputmode="numeric">
-                            <label for="tariff">Тариф, ₽/кВт·ч</label>
-                            <input id="tariff" type="number" min="1" step="0.01" value="5" inputmode="decimal">
-                            <label for="saving">Ожидаемое снижение, %</label>
-                            <input id="saving" type="number" min="1" max="40" value="14" inputmode="numeric">
-                            <div class="calc-output" aria-live="polite">Результат появится после ввода параметров.</div>
-                        </div>
-                    </section>
-
-                    <section id="faq" class="reveal" aria-labelledby="faq-nr">
-                        <h2 id="faq-nr">FAQ</h2>
-                        <div class="accordion" data-accordion>
-                            <div class="accordion-item">
-                                <button type="button" aria-expanded="false">TODO — добавить вопрос по безопасности.<span class="icon">＋</span></button>
-                                <div class="accordion-panel">TODO — добавить ответ.</div>
-                            </div>
-                            <div class="accordion-item">
-                                <button type="button" aria-expanded="false">TODO — добавить вопрос по срокам.<span class="icon">＋</span></button>
-                                <div class="accordion-panel">TODO — добавить ответ.</div>
-                            </div>
-                            <div class="accordion-item">
-                                <button type="button" aria-expanded="false">TODO — добавить вопрос по нормативам.<span class="icon">＋</span></button>
-                                <div class="accordion-panel">TODO — добавить ответ.</div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="terms" class="reveal" aria-labelledby="terms-nr">
-                        <h2 id="terms-nr">Ключевые термины</h2>
-                        <div class="grid-responsive">
-                            <div class="pill">TODO</div>
-                            <div class="pill">природный хладагент</div>
-                            <div class="pill">CO2</div>
-                            <div class="pill">аммиак</div>
-                            <div class="pill">безопасность</div>
-                            <div class="pill">энергоэффективность</div>
-                            <div class="pill">нормативы</div>
-                            <div class="pill">мониторинг</div>
-                            <div class="pill">free-cooling</div>
-                            <div class="pill">TCO</div>
-                            <div class="pill">ROI</div>
-                        </div>
-                    </section>
-
-                    <section id="todo" class="reveal" aria-labelledby="todo-nr">
-                        <h2 id="todo-nr">Требуется контент</h2>
-                        <div class="card" role="alert">
-                            <p>Необходимо дополнить файл <strong>/info/natural-refrigerant.txt</strong> согласованным описанием. Текущие блоки служат напоминанием.</p>
-                            <button class="btn-nav" data-copy="/info/natural-refrigerant.txt">Скопировать путь</button>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
     </main>
     <div id="cta-inj"></div>
     <div id="footer-inj"></div>

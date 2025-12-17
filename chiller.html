@@ -3,202 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Чиллерные решения — стабильное охлаждение</title>
-    <meta name="description" content="PRO Климат подбирает и собирает чиллерные станции с точным гидравлическим расчетом, резервированием и цифровым мониторингом.">
+    <title>Чиллеры для отраслей — PRO Климат</title>
+    <meta name="description" content="Чиллеры для зданий, промышленности и ЦОД.">
     <link rel="canonical" href="https://pro.master52.ru/chiller.html">
-    <meta property="og:title" content="Чиллерные решения — стабильное охлаждение">
-    <meta property="og:description" content="PRO Климат подбирает и собирает чиллерные станции с точным гидравлическим расчетом, резервированием и цифровым мониторингом.">
+    <meta property="og:title" content="Чиллеры для отраслей — PRO Климат">
+    <meta property="og:description" content="Чиллеры для зданий, промышленности и ЦОД.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://pro.master52.ru/chiller.html">
     <meta property="og:site_name" content="PRO Климат">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Чиллерные решения — стабильное охлаждение">
-    <meta name="twitter:description" content="PRO Климат подбирает и собирает чиллерные станции с точным гидравлическим расчетом, резервированием и цифровым мониторингом.">
+    <meta name="twitter:title" content="Чиллеры для отраслей — PRO Климат">
+    <meta name="twitter:description" content="Чиллеры для зданий, промышленности и ЦОД.">
     <link rel="stylesheet" href="assets/css/site.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "name": "PRO Климат",
-          "url": "https://pro.master52.ru/",
-          "logo": "https://pro.master52.ru/assets/img/logo.svg",
-          "contactPoint": {"@type": "ContactPoint","telephone": "+7 831 433-39-05","contactType": "customer service","email": "4333928@mail.ru"},
-          "address": {"@type": "PostalAddress","streetAddress": "ул. Белинского, 62","addressLocality": "Нижний Новгород","addressCountry": "RU"}
-        },
-        {"@type": "WebSite","url": "https://pro.master52.ru/","name": "PRO Климат"},
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://pro.master52.ru/index.html"},
-            {"@type": "ListItem", "position": 2, "name": "Чиллеры", "item": "https://pro.master52.ru/chiller.html"}
-          ]
-        }
-      ]
-    }
-    </script>
 </head>
 <body>
     <div id="header-inj"></div>
     <main>
-        <section class="hero reveal" aria-labelledby="chiller-title">
-            <div class="container">
-                <div class="breadcrumbs"><a href="/">Главная</a><span>/</span>Чиллеры</div>
-                <div class="badges">
-                    <div class="badge">Гидравлика</div>
-                    <div class="badge">Мониторинг</div>
+        <div class="container content-from-info" data-info="chiller"></div>
+        <section class="card" aria-labelledby="chart-title" style="margin:40px auto; max-width:960px;">
+            <div class="grid-2" data-chart>
+                <div>
+                    <h2 id="chart-title">Сравнение владения хладагентом</h2>
+                    <p class="subhead">Настройте горизонты и допущения: расчёт только для оценки.</p>
+                    <label for="horizon">Горизонт, лет</label>
+                    <select id="horizon">
+                        <option value="5">5 лет</option>
+                        <option value="10">10 лет</option>
+                    </select>
+                    <label for="leak">Утечки, % в год</label>
+                    <input type="number" id="leak" data-leak min="0" max="25" step="0.5" value="5">
+                    <label for="price">Стоимость энергии, ₽/кВт·ч</label>
+                    <input type="number" id="price" data-price min="1" step="0.1" value="6">
                 </div>
-                <h1 id="chiller-title" class="hero-title">Чиллерные решения — стабильное охлаждение для производства и ЦОД</h1>
-                <p class="hero-desc">PRO Климат подбирает и собирает чиллерные станции с точным гидравлическим расчетом, резервированием и цифровым мониторингом.</p>
-                <h2 style="font-size:1rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--c-text-light);">Summary</h2>
-                <div class="summary-grid" aria-label="Краткое резюме чиллеров">
-                    <div class="summary-item">Подбор чиллеров под нагрузку и климат региона.</div>
-                    <div class="summary-item">Гидравлический расчет, балансировка и автоматика насосных групп.</div>
-                    <div class="summary-item">Резервирование контуров и подготовка к сервису.</div>
-                    <div class="summary-item">Дистанционный мониторинг и диагностика работы.</div>
+                <div style="align-self:center;">
+                    <canvas width="420" height="260" aria-label="Диаграмма TCO" role="img"></canvas>
                 </div>
             </div>
         </section>
-
-        <div class="container content">
-            <section class="layout reveal">
-                <aside class="sidebar" aria-label="Навигация по чиллерам">
-                    <div class="side-label">Разделы</div>
-                    <div class="side-menu">
-                        <a href="#what">Что делаем</a>
-                        <a href="#who">Для кого</a>
-                        <a href="#how">Процесс</a>
-                        <a href="#deliver">Доставляем</a>
-                        <a href="#calc">Калькулятор</a>
-                        <a href="#faq">FAQ</a>
-                    </div>
-                </aside>
-                <div class="content">
-                    <section id="what" aria-labelledby="what-title">
-                        <h2 id="what-title">Что мы делаем</h2>
-                        <p>Проектируем и поставляем чиллерные станции для промышленных линий, дата-центров и общественных зданий. Настраиваем гидравлические схемы, подбираем насосы, резервируем контуры, настраиваем автоматику и подключаем удаленный контроль температуры и расхода.</p>
-                        <div class="feature-list">
-                            <div class="feature">
-                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v4m0 10v4m7-7h-4M9 14H5m12-4H5m14-3l-2 2m0 6l2 2M5 5l2 2m0 6L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-                                <div><strong>Гидравлика</strong><p>Расчет расхода, подбор насосов и балансировка веток.</p></div>
-                            </div>
-                            <div class="feature">
-                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h14M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-                                <div><strong>Резервирование</strong><p>Схемы N+1 или резерв по насосным группам с переключением.</p></div>
-                            </div>
-                            <div class="feature">
-                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5l7 4v6l-7 4-7-4V9l7-4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                <div><strong>Мониторинг</strong><p>Датчики температуры и расхода, удаленный доступ и оповещения.</p></div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="who" class="reveal" aria-labelledby="who-title">
-                        <h2 id="who-title">Для кого</h2>
-                        <p>Промышленные предприятия, склады, ЦОДы и объекты с круглосуточной нагрузкой, где важно обеспечить стабильное охлаждение без скачков и аварий.</p>
-                        <div class="key-terms" style="justify-content:flex-start;">
-                            <span>Промышленность</span><span>Склады</span><span>ЦОД</span><span>Круглосуточные объекты</span><span>Офисные здания</span><span>Общественные пространства</span>
-                        </div>
-                    </section>
-
-                    <section id="how" class="reveal" aria-labelledby="how-title">
-                        <h2 id="how-title">Как работаем</h2>
-                        <div class="tab-buttons" role="tablist" aria-label="Этапы чиллеров">
-                            <button role="tab" aria-selected="true" aria-controls="ch-tab1" id="ch-tab-btn-1">Сбор данных</button>
-                            <button role="tab" aria-selected="false" aria-controls="ch-tab2" id="ch-tab-btn-2">Проект</button>
-                            <button role="tab" aria-selected="false" aria-controls="ch-tab3" id="ch-tab-btn-3">Монтаж и сервис</button>
-                        </div>
-                        <div id="ch-tab1" class="tab-panel active" role="tabpanel" aria-labelledby="ch-tab-btn-1">Собираем данные по тепловой нагрузке и климату, обследуем текущие контуры и автоматику.</div>
-                        <div id="ch-tab2" class="tab-panel" role="tabpanel" aria-labelledby="ch-tab-btn-2">Подбираем чиллеры и гидромодули, проектируем разводку, размещение и резервирование.</div>
-                        <div id="ch-tab3" class="tab-panel" role="tabpanel" aria-labelledby="ch-tab-btn-3">Монтаж с учетом сервисных зон, балансировка, подключение мониторинга и регламент сервисных проверок.</div>
-                    </section>
-
-                    <section id="deliver" class="reveal" aria-labelledby="deliver-title">
-                        <h2 id="deliver-title">Что получаете</h2>
-                        <div class="grid-2">
-                            <div class="card">
-                                <h4>Проектные материалы</h4>
-                                <ul class="list-check">
-                                    <li><span class="icon-ok">✓</span><span>Гидравлические схемы и расчеты резервирования.</span></li>
-                                    <li><span class="icon-ok">✓</span><span>Спецификация чиллеров, насосов и автоматики.</span></li>
-                                    <li><span class="icon-ok">✓</span><span>План размещения и трассировки.</span></li>
-                                </ul>
-                            </div>
-                            <div class="card">
-                                <h4>Запуск и контроль</h4>
-                                <ul class="list-check">
-                                    <li><span class="icon-ok">✓</span><span>Инструкции по эксплуатации и сервисный регламент.</span></li>
-                                    <li><span class="icon-ok">✓</span><span>Шаблоны отчетов мониторинга и оповещений.</span></li>
-                                    <li><span class="icon-ok">✓</span><span>Удаленный доступ к показателям и аналитике.</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="calc" class="reveal" aria-labelledby="calc-title">
-                        <h2 id="calc-title">Оценка стоимости энергии</h2>
-                        <p>Посчитайте ориентировочные затраты на охлаждение и эффект от балансировки.</p>
-                        <div class="calc-card" data-calculator="chiller">
-                            <label for="ch-load">Тепловая нагрузка, кВт</label>
-                            <input id="ch-load" type="number" min="50" value="300">
-                            <label for="ch-tariff">Тариф, ₽/кВт·ч</label>
-                            <input id="ch-tariff" type="number" min="1" step="0.01" value="4.8">
-                            <label for="ch-hrs">Часы работы в месяц</label>
-                            <input id="ch-hrs" type="number" min="50" value="600">
-                            <div class="calc-output" aria-live="polite">Введите данные, чтобы увидеть оценку.</div>
-                        </div>
-                    </section>
-
-                    <section id="faq" class="reveal" aria-labelledby="faq-title">
-                        <h2 id="faq-title">FAQ</h2>
-                        <div class="accordion" data-accordion>
-                            <div class="accordion-item">
-                                <button type="button" aria-expanded="false">Работаете ли вы с существующими чиллерами?<span class="icon">＋</span></button>
-                                <div class="accordion-panel">Да, проводим аудит, перенастройку автоматики и интеграцию с мониторингом без остановки критичных зон.</div>
-                            </div>
-                            <div class="accordion-item">
-                                <button type="button" aria-expanded="false">Делаете ли вы резервирование?<span class="icon">＋</span></button>
-                                <div class="accordion-panel">Предлагаем схемы N+1 или резервирование по насосным группам с автоматическим переключением.</div>
-                            </div>
-                            <div class="accordion-item">
-                                <button type="button" aria-expanded="false">Можно ли получить мониторинг температуры и расхода удаленно?<span class="icon">＋</span></button>
-                                <div class="accordion-panel">Подключаем датчики и выводим показатели в диспетчерскую или веб-кабинет.</div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="terms" class="reveal" aria-labelledby="terms-title">
-                        <h2 id="terms-title">Ключевые термины</h2>
-                        <div class="key-terms">
-                            <span>Чиллер</span><span>Гидравлический расчет</span><span>Насосные группы</span><span>Резервирование</span><span>Free-cooling</span><span>Удаленный мониторинг</span><span>Балансировка</span><span>Температурный контур</span><span>TCO</span><span>SLA</span><span>Диагностика</span><span>Эксплуатация</span>
-                        </div>
-                        <p style="margin-top:16px;">Связанные решения: <a href="/vrf.html">VRF</a> и <a href="/data-centre.html">охлаждение ЦОД</a>.</p>
-                    </section>
-                </div>
-            </section>
-        </div>
     </main>
-
     <div id="cta-inj"></div>
     <div id="footer-inj"></div>
-
-    <div class="sticky-cta" role="alert" aria-live="polite">
-        <span>Чиллеры с резервированием и мониторингом</span>
-        <button type="button" data-copy="+7 831 433-39-05">Скопировать телефон</button>
-    </div>
-
     <script src="assets/js/site.js" defer></script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question","name": "Работаете ли вы с существующими чиллерами?","acceptedAnswer":{"@type":"Answer","text":"Да, проводим аудит, перенастройку автоматики и интеграцию с мониторингом без остановки критичных зон."}},
-        {"@type": "Question","name": "Делаете ли вы резервирование?","acceptedAnswer":{"@type":"Answer","text":"Предлагаем схемы N+1 или резервирование по насосным группам с автоматическим переключением."}},
-        {"@type": "Question","name": "Можно ли получить мониторинг температуры и расхода удаленно?","acceptedAnswer":{"@type":"Answer","text":"Подключаем датчики и выводим показатели в диспетчерскую или веб-кабинет."}}
-      ]
-    }
-    </script>
 </body>
 </html>
