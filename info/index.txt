@@ -1,0 +1,245 @@
+<!-- MAIN HERO -->
+<section class="hero hero--main" id="top">
+  <div class="container">
+    <div class="hero__grid">
+
+      <div class="hero__content">
+        <p class="eyebrow">
+          Инженерные климатические системы • холод • сервис • цифровизация
+        </p>
+
+        <h1 class="h1">
+          Мы проектируем и обслуживаем климат,
+          <br>который <strong>работает годами</strong>, а не «до первой аварии»
+        </h1>
+
+        <p class="lead">
+          От офисных зданий и производств до ЦОД и холодильных комплексов.
+          Берём на себя инженерную ответственность: расчёт, внедрение,
+          эксплуатацию и результат по SLA.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#solutions">Посмотреть решения</a>
+          <a class="btn btn--ghost" href="#about">О компании</a>
+        </div>
+
+        <ul class="hero__proof">
+          <li>Проектирование • монтаж • сервис • модернизация</li>
+          <li>Работаем с VRF, чиллерами, CO₂, NH₃, ЦОД</li>
+          <li>AI-мониторинг и предиктивная диагностика</li>
+        </ul>
+      </div>
+
+      <div class="hero__media">
+        <div class="media-card">
+          <p class="media-card__title">Наш принцип</p>
+          <p class="media-card__text">
+            Климат — это не оборудование.
+            Климат — это функция бизнеса.
+          </p>
+          <a class="link" href="#philosophy">Почему мы так работаем →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STORY / PHILOSOPHY -->
+<section class="section section--muted" id="philosophy">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Зачем мы вообще этим занимаемся</h2>
+      <p class="subhead">
+        Потому что большинство проблем с климатом — не из-за техники,
+        а из-за неправильных решений на старте.
+      </p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="h3">Как обычно</h3>
+        <ul class="bullets">
+          <li>подбор «по мощности»</li>
+          <li>монтаж без понимания режимов</li>
+          <li>сервис «по календарю»</li>
+          <li>аварии, споры, простои</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Как делаем мы</h3>
+        <ul class="bullets">
+          <li>анализ нагрузки и сценариев</li>
+          <li>инженерная архитектура под объект</li>
+          <li>контроль параметров и данных</li>
+          <li>ответственность за результат</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note">
+      <p>
+        <strong>Мы не продаём оборудование.</strong>
+        Мы продаём устойчивую работу системы — сегодня и через 10 лет.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS PREVIEW -->
+<section class="section" id="solutions">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Наши ключевые решения</h2>
+      <p class="subhead">
+        Не «каталог услуг», а набор инженерных сценариев под разные задачи.
+      </p>
+    </header>
+
+    <div class="grid grid--3">
+
+      <article class="solution-card">
+        <h3 class="h3">VRF-системы</h3>
+        <p>
+          Зональный климат для офисов, БЦ, отелей и клиник.
+          Высокая энергоэффективность при переменной нагрузке.
+        </p>
+        <a class="link" href="/vrf.html">Подробнее →</a>
+      </article>
+
+      <article class="solution-card">
+        <h3 class="h3">Чиллеры</h3>
+        <p>
+          Воздушные и водяные чиллеры для зданий,
+          промышленности и ЦОД — с резервированием и free cooling.
+        </p>
+        <a class="link" href="/chillers.html">Подробнее →</a>
+      </article>
+
+      <article class="solution-card">
+        <h3 class="h3">ЦОД и high-density</h3>
+        <p>
+          Рециркуляционные кондиционеры, airflow management,
+          liquid cooling и D2C.
+        </p>
+        <a class="link" href="/dc-cooling.html">Подробнее →</a>
+      </article>
+
+      <article class="solution-card">
+        <h3 class="h3">CO₂ и аммиак</h3>
+        <p>
+          Природные хладагенты для ритейла и промышленности.
+          Экология, эффективность и будущее без ограничений.
+        </p>
+        <a class="link" href="/refrigerants.html">Подробнее →</a>
+      </article>
+
+      <article class="solution-card">
+        <h3 class="h3">AI-мониторинг</h3>
+        <p>
+          Контроль параметров, предиктив отказов,
+          автоматизация сервиса и отчётность.
+        </p>
+        <a class="link" href="/ai-monitoring.html">Подробнее →</a>
+      </article>
+
+      <article class="solution-card">
+        <h3 class="h3">HVACaaS</h3>
+        <p>
+          Климат как сервис: OPEX вместо CAPEX,
+          SLA вместо «попробуем починить».
+        </p>
+        <a class="link" href="/hvaas.html">Подробнее →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="section section--muted" id="process">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Как мы работаем</h2>
+      <p class="subhead">Прозрачный процесс без сюрпризов.</p>
+    </header>
+
+    <ol class="steps">
+      <li class="steps__item">
+        <h3 class="h3">Анализ и аудит</h3>
+        <p>Нагрузки, режимы, риски, требования бизнеса.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">Инженерное решение</h3>
+        <p>Архитектура системы, варианты и обоснование.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">Внедрение</h3>
+        <p>Проект, монтаж, ПНР, ввод в эксплуатацию.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">Сервис и контроль</h3>
+        <p>Мониторинг, SLA, отчёты, модернизация.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ABOUT COMPANY -->
+<section class="section" id="about">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">О компании</h2>
+      <p class="subhead">Коротко и по делу.</p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <p>
+          <strong>{{Название компании}}</strong> — инженерная компания,
+          специализирующаяся на климатических и холодильных системах
+          для коммерческих, промышленных и критичных объектов.
+        </p>
+        <p>
+          Мы работаем на стыке инженерии, сервиса и цифровых технологий,
+          поэтому отвечаем не только за монтаж, но и за результат в эксплуатации.
+        </p>
+      </div>
+
+      <div class="card">
+        <ul class="bullets">
+          <li>Проектирование и подбор систем</li>
+          <li>Монтаж и пуско-наладка</li>
+          <li>Сервис и аварийная поддержка</li>
+          <li>AI-мониторинг и оптимизация</li>
+          <li>Контракты по SLA и HVACaaS</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta" id="contact">
+  <div class="container">
+    <div class="cta__box">
+      <h2 class="h2">Обсудить ваш объект</h2>
+      <p class="lead">
+        Мы скажем честно: какое решение подойдёт,
+        сколько оно стоит и какие риски есть.
+      </p>
+
+      <div class="cta__actions">
+        <a class="btn btn--primary" href="{{crm_link}}">Оставить заявку</a>
+        <a class="btn btn--ghost" href="tel:{{phone}}">Позвонить</a>
+      </div>
+
+      <p class="cta__meta">
+        Достаточно описания объекта или пары цифр —
+        остальное возьмём на себя.
+      </p>
+    </div>
+  </div>
+</section>

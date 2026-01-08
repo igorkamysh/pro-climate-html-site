@@ -1,0 +1,280 @@
+<!-- VRF SYSTEMS: HERO -->
+<section class="hero hero--vrf" id="vrf-systems">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow">VRF / VRV • мультизональные системы • коммерческие объекты</p>
+
+        <h1 class="h1">VRF-системы: точный климат для сложных зданий</h1>
+
+        <p class="lead">
+          Проектируем, поставляем, монтируем и обслуживаем VRF-системы для офисов,
+          БЦ, отелей, клиник и многофункциональных зданий.
+          Управляем температурой по зонам — без перерасхода энергии.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#vrf-calc">Рассчитать VRF</a>
+          <a class="btn btn--ghost" href="#vrf-compare">Когда VRF — лучший выбор</a>
+        </div>
+
+        <ul class="hero__proof">
+          <li>Зональное управление и инверторная модуляция</li>
+          <li>Высокая энергоэффективность при частичных нагрузках</li>
+          <li>Интеграция с BMS и диспетчеризацией</li>
+        </ul>
+      </div>
+
+      <div class="hero__media">
+        <div class="media-card">
+          <p class="media-card__title">Суть VRF</p>
+          <p class="media-card__text">
+            Одна система — десятки внутренних блоков.
+            Ровно столько холода или тепла, сколько нужно каждой зоне.
+          </p>
+          <a class="link" href="#vrf-how">Как работает →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS VRF -->
+<section class="section" id="vrf-how">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Что такое VRF-система</h2>
+      <p class="subhead">Variable Refrigerant Flow — управление расходом хладагента, а не «вкл/выкл».</p>
+    </header>
+
+    <div class="grid grid--3">
+      <div class="card">
+        <h3 class="h3">Один наружный блок</h3>
+        <p>
+          К одному или группе наружных блоков подключаются
+          десятки внутренних — кассетных, канальных, настенных.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Переменный расход</h3>
+        <p>
+          Инверторный компрессор подаёт ровно столько хладагента,
+          сколько требуется в текущий момент.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Зональный контроль</h3>
+        <p>
+          Каждое помещение живёт своей жизнью —
+          без перегрева и «перетягивания» мощности.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHERE VRF FITS -->
+<section class="section section--muted" id="vrf-where">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Где VRF особенно эффективны</h2>
+      <p class="subhead">Там, где много зон и непостоянные нагрузки.</p>
+    </header>
+
+    <div class="grid grid--3">
+      <div class="card">
+        <h3 class="h3">Бизнес-центры</h3>
+        <p>Разные арендаторы, разные графики, разная тепловая нагрузка.</p>
+      </div>
+      <div class="card">
+        <h3 class="h3">Отели и апарт-отели</h3>
+        <p>Комфорт гостей + экономия на неполной загрузке.</p>
+      </div>
+      <div class="card">
+        <h3 class="h3">Медицинские и учебные здания</h3>
+        <p>Точность температур и тихая работа.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPES -->
+<section class="section" id="vrf-types">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Типы VRF-систем</h2>
+      <p class="subhead">Выбор зависит от задач, а не от бренда.</p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="h3">Heat Pump (2-трубные)</h3>
+        <ul class="bullets">
+          <li>охлаждение или нагрев всего здания одновременно</li>
+          <li>проще и дешевле</li>
+          <li>подходит для офисов с одинаковым режимом</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Heat Recovery (3-трубные)</h3>
+        <ul class="bullets">
+          <li>одновременный холод и тепло в разных зонах</li>
+          <li>рекуперация тепла между помещениями</li>
+          <li>максимальная гибкость и комфорт</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROS / CONS -->
+<section class="section section--muted" id="vrf-pros-cons">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Плюсы и ограничения VRF</h2>
+      <p class="subhead">Честно, без маркетингового глянца.</p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="h3">Преимущества</h3>
+        <ul class="bullets">
+          <li>высокая энергоэффективность</li>
+          <li>гибкость по зонам и планировкам</li>
+          <li>тихая работа</li>
+          <li>масштабируемость системы</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Ограничения</h3>
+        <ul class="bullets">
+          <li>требует грамотного проектирования</li>
+          <li>чувствительна к ошибкам монтажа</li>
+          <li>не всегда выгодна для очень больших мощностей</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="vrf-process">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Как мы работаем с VRF</h2>
+      <p class="subhead">От расчёта до стабильной эксплуатации.</p>
+    </header>
+
+    <ol class="steps">
+      <li class="steps__item">
+        <h3 class="h3">1) Теплотехнический расчёт</h3>
+        <p>Нагрузки по помещениям, сценарии использования, резервы.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">2) Проектирование</h3>
+        <p>Трассы, перепады, автоматика, дренаж, интеграция с вентиляцией.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">3) Монтаж</h3>
+        <p>Опрессовка, вакуумирование, контроль чистоты контура.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">4) ПНР и обучение</h3>
+        <p>Настройка режимов, обучение эксплуатации.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">5) Сервис</h3>
+        <p>Регламентное ТО, диагностика, мониторинг.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="section section--muted" id="vrf-compare">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">VRF или чиллер-фанкойл?</h2>
+      <p class="subhead">Коротко по сути.</p>
+    </header>
+
+    <div class="table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Критерий</th>
+            <th>VRF</th>
+            <th>Чиллер-фанкойл</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Масштаб</td>
+            <td>Средний</td>
+            <td>Крупный</td>
+          </tr>
+          <tr>
+            <td>Гибкость по зонам</td>
+            <td>Очень высокая</td>
+            <td>Средняя</td>
+          </tr>
+          <tr>
+            <td>Сложность инженерии</td>
+            <td>Средняя</td>
+            <td>Высокая</td>
+          </tr>
+          <tr>
+            <td>Эксплуатация</td>
+            <td>Проще</td>
+            <td>Требует персонала</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="vrf-calc">
+  <div class="container">
+    <div class="cta__box">
+      <h2 class="h2">Рассчитать VRF-систему под ваш объект</h2>
+      <p class="lead">
+        Мы скажем честно: VRF, чиллер или гибрид —
+        и почему это выгодно именно в вашем случае.
+      </p>
+
+      <div class="cta__actions">
+        <a class="btn btn--primary" href="{{crm_link}}">Получить расчёт</a>
+        <a class="btn btn--ghost" href="tel:{{phone}}">Позвонить</a>
+      </div>
+
+      <ul class="cta__meta">
+        <li>Нужно: планы помещений или площадь + назначение здания</li>
+        <li>Срок расчёта: {{hours}} часов</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SEO / LLM -->
+<section class="section" id="vrf-seo">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">VRF — коротко</h2>
+    </header>
+
+    <div class="card">
+      <p>
+        <strong>VRF-система</strong> — мультизональная система кондиционирования
+        с переменным расходом хладагента, обеспечивающая
+        энергоэффективное и точное управление климатом в зданиях
+        со множеством помещений.
+      </p>
+    </div>
+  </div>
+</section>

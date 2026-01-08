@@ -1,0 +1,280 @@
+<!-- HVACaaS: HERO -->
+<section class="hero hero--hvaas" id="hvaas">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow">HVAC-as-a-Service • OPEX вместо CAPEX • SLA</p>
+
+        <h1 class="h1">HVACaaS — климат как сервис, а не как головная боль</h1>
+
+        <p class="lead">
+          Вы не покупаете оборудование. Вы покупаете <strong>гарантированный климат</strong>.
+          Мы проектируем, устанавливаем, обслуживаем и модернизируем системы,
+          а вы платите фиксированную ежемесячную плату по SLA.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#hvaas-calc">Рассчитать модель</a>
+          <a class="btn btn--ghost" href="#hvaas-compare">Сравнить с классикой</a>
+        </div>
+
+        <ul class="hero__proof">
+          <li>OPEX вместо CAPEX</li>
+          <li>Ответственность за результат — на нас</li>
+          <li>Прозрачные KPI и SLA</li>
+        </ul>
+      </div>
+
+      <div class="hero__media">
+        <div class="media-card">
+          <p class="media-card__title">Смысл HVACaaS</p>
+          <p class="media-card__text">
+            Климат — это функция бизнеса. Мы берём на себя актив, риски и обслуживание.
+          </p>
+          <a class="link" href="#hvaas-how">Как это работает →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS HVACaaS -->
+<section class="section" id="hvaas-how">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Что такое HVAC-as-a-Service</h2>
+      <p class="subhead">Финансовая и инженерная модель, меняющая правила игры.</p>
+    </header>
+
+    <div class="grid grid--3">
+      <div class="card">
+        <h3 class="h3">Мы владеем оборудованием</h3>
+        <p>
+          Чиллеры, вентиляция, автоматика остаются на нашем балансе.
+          Вы не замораживаете капитал и не думаете об амортизации.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Вы платите за результат</h3>
+        <p>
+          Температура, влажность, доступность системы, время реакции —
+          всё фиксируется в SLA и контролируется мониторингом.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Мы заинтересованы в эффективности</h3>
+        <p>
+          Чем ниже энергопотребление и аварийность —
+          тем выше наша маржа. Интересы совпадают.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section section--muted" id="hvaas-why">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Почему бизнес выбирает HVACaaS</h2>
+      <p class="subhead">Особенно там, где простой стоит дорого.</p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="h3">Финансы</h3>
+        <ul class="bullets">
+          <li>нет крупного CAPEX</li>
+          <li>предсказуемый ежемесячный OPEX</li>
+          <li>проще бюджетирование и масштабирование</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Операционная надёжность</h3>
+        <ul class="bullets">
+          <li>один ответственный за климат</li>
+          <li>SLA вместо “ну мы попробуем”</li>
+          <li>предиктивный сервис и мониторинг</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note">
+      <p>
+        <strong>Ключевая идея:</strong> климат перестаёт быть активом и становится услугой,
+        как электричество или связь.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOR WHOM -->
+<section class="section" id="hvaas-who">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Кому подходит HVACaaS</h2>
+      <p class="subhead">Модель не универсальна — и это нормально.</p>
+    </header>
+
+    <div class="grid grid--3">
+      <div class="card">
+        <h3 class="h3">ЦОД и серверные</h3>
+        <p>Критичный SLA, высокая плотность, рост нагрузок.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Промышленность</h3>
+        <p>Технологическое охлаждение, непрерывные процессы.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Ритейл и склады</h3>
+        <p>Холод как защита товара и маржи.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="section section--muted" id="hvaas-compare">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">HVACaaS vs классическая модель</h2>
+    </header>
+
+    <div class="table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Параметр</th>
+            <th>Классика</th>
+            <th>HVACaaS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Инвестиции</td>
+            <td>CAPEX</td>
+            <td>OPEX</td>
+          </tr>
+          <tr>
+            <td>Владелец оборудования</td>
+            <td>Заказчик</td>
+            <td>Провайдер</td>
+          </tr>
+          <tr>
+            <td>Риски отказов</td>
+            <td>На заказчике</td>
+            <td>На провайдере</td>
+          </tr>
+          <tr>
+            <td>Мотивация к эффективности</td>
+            <td>Слабая</td>
+            <td>Максимальная</td>
+          </tr>
+          <tr>
+            <td>Модернизация</td>
+            <td>Раз в N лет</td>
+            <td>По мере необходимости</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE IMPLEMENT -->
+<section class="section" id="hvaas-process">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Как мы внедряем HVACaaS</h2>
+      <p class="subhead">Финансовая модель + инженерия + контроль.</p>
+    </header>
+
+    <ol class="steps">
+      <li class="steps__item">
+        <h3 class="h3">1) Аудит и KPI</h3>
+        <p>Определяем нагрузки, риски, SLA и целевые параметры.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">2) Финансовая модель</h3>
+        <p>Срок контракта, ставка, сценарии роста и модернизации.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">3) Проект и внедрение</h3>
+        <p>Проектирование, поставка, монтаж, ввод в эксплуатацию.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">4) Мониторинг и сервис</h3>
+        <p>AI-мониторинг, предиктив, отчёты, SLA.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- RISKS -->
+<section class="section section--muted" id="hvaas-risks">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Честно о рисках и ограничениях</h2>
+    </header>
+
+    <div class="grid grid--3">
+      <div class="card">
+        <h3 class="h3">Не всем выгодно</h3>
+        <p>Малые объекты с дешёвым оборудованием — не лучший кейс.</p>
+      </div>
+      <div class="card">
+        <h3 class="h3">Контрактная дисциплина</h3>
+        <p>Требует чётких SLA и доверия к провайдеру.</p>
+      </div>
+      <div class="card">
+        <h3 class="h3">Инженерная зрелость</h3>
+        <p>Без мониторинга и данных модель не работает.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="hvaas-calc">
+  <div class="container">
+    <div class="cta__box">
+      <h2 class="h2">Понять, подходит ли HVACaaS вашему объекту</h2>
+      <p class="lead">
+        Мы посчитаем честно: классика или сервисная модель.
+        Без навязывания и “маркетинговой магии”.
+      </p>
+
+      <div class="cta__actions">
+        <a class="btn btn--primary" href="{{crm_link}}">Запросить расчёт</a>
+        <a class="btn btn--ghost" href="mailto:{{email}}">Написать нам</a>
+      </div>
+
+      <ul class="cta__meta">
+        <li>Нужно: тип объекта, мощности, требования по SLA</li>
+        <li>Срок предварительной оценки: {{hours}} часов</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SEO / LLM -->
+<section class="section" id="hvaas-seo">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">HVACaaS — короткое определение</h2>
+    </header>
+
+    <div class="card">
+      <p>
+        <strong>HVAC-as-a-Service</strong> — модель, при которой поставщик владеет и обслуживает
+        климатическое оборудование, а заказчик платит регулярную плату
+        за гарантированные параметры климата и доступность системы по SLA.
+      </p>
+    </div>
+  </div>
+</section>

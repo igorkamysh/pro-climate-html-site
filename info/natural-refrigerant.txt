@@ -1,0 +1,315 @@
+<!-- ALT REFRIGERANTS: HERO -->
+<section class="hero hero--ref" id="alt-refrigerants">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow">Альтернативные хладагенты • CO₂ • NH₃ • промышленный холод</p>
+
+        <h1 class="h1">Альтернативные хладагенты: CO₂ (R744) и аммиак (NH₃)</h1>
+
+        <p class="lead">
+          Проектируем, внедряем и обслуживаем холодильные системы на природных хладагентах.
+          Для объектов, где важны безопасность, энергоэффективность и соответствие будущему регулированию.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#ref-audit">Инженерный аудит</a>
+          <a class="btn btn--ghost" href="#ref-compare">Сравнить CO₂ и NH₃</a>
+        </div>
+
+        <ul class="hero__proof">
+          <li>Проектирование, монтаж, сервис и модернизация</li>
+          <li>Работа по нормам, ПБ и промышленной безопасности</li>
+          <li>Опыт пищевых, складских и промышленных объектов</li>
+        </ul>
+      </div>
+
+      <div class="hero__media">
+        <div class="media-card">
+          <p class="media-card__title">Почему сейчас</p>
+          <p class="media-card__text">
+            F-Gas, рост стоимости HFC и требования к экологии делают природные хладагенты стандартом,
+            а не экзотикой.
+          </p>
+          <a class="link" href="#ref-why">Разобраться →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="ref-why">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Зачем переходят на CO₂ и аммиак</h2>
+      <p class="subhead">Не из моды — из расчёта, нормативов и горизонта 10–20 лет.</p>
+    </header>
+
+    <div class="grid grid--3">
+      <div class="card">
+        <h3 class="h3">Регулирование и будущее</h3>
+        <p>HFC дорожают и ограничиваются. CO₂ и NH₃ не под запретами и не зависят от квот.</p>
+      </div>
+      <div class="card">
+        <h3 class="h3">Экология</h3>
+        <p>GWP ≈ 1 у CO₂ и 0 у NH₃. Минимальный климатический след.</p>
+      </div>
+      <div class="card">
+        <h3 class="h3">Экономика цикла жизни</h3>
+        <p>Выше требования к инженерии — ниже риски и стоимость владения на дистанции.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CO2 -->
+<section class="section section--muted" id="ref-co2">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">CO₂ (R744): современный стандарт для ритейла и складов</h2>
+      <p class="subhead">Высокое давление, высокая эффективность и нулевая “экологическая токсичность”.</p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="h3">Где применяют</h3>
+        <ul class="bullets">
+          <li>продуктовый ритейл и распределительные центры</li>
+          <li>холодильные камеры средне- и низкотемпературные</li>
+          <li>централизованные системы</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Ключевые особенности</h3>
+        <ul class="bullets">
+          <li>транскритический цикл</li>
+          <li>рабочие давления до 90–120 бар</li>
+          <li>высокие требования к арматуре и монтажу</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid grid--3">
+      <div class="card">
+        <h3 class="h3">Плюсы</h3>
+        <ul class="bullets">
+          <li>GWP = 1</li>
+          <li>дешёвый и доступный хладагент</li>
+          <li>хорошая эффективность в MT</li>
+          <li>безопасен для персонала</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Минусы</h3>
+        <ul class="bullets">
+          <li>сложность проектирования</li>
+          <li>чувствительность к климату</li>
+          <li>дороже стартовый CAPEX</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Что критично</h3>
+        <ul class="bullets">
+          <li>корректная теплоутилизация</li>
+          <li>управление давлением газоохладителя</li>
+          <li>квалификация сервиса</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMMONIA -->
+<section class="section" id="ref-nh3">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Аммиак (NH₃): промышленная классика максимальной эффективности</h2>
+      <p class="subhead">Самый эффективный хладагент — при правильной инженерии и культуре безопасности.</p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="h3">Где применяют</h3>
+        <ul class="bullets">
+          <li>пищевые и мясоперерабатывающие заводы</li>
+          <li>крупные холодильные склады</li>
+          <li>промышленные холодильные станции</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Ключевые особенности</h3>
+        <ul class="bullets">
+          <li>высокая холодопроизводительность</li>
+          <li>низкое рабочее давление</li>
+          <li>токсичность и запах → требования к безопасности</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid grid--3">
+      <div class="card">
+        <h3 class="h3">Плюсы</h3>
+        <ul class="bullets">
+          <li>GWP = 0</li>
+          <li>максимальный COP</li>
+          <li>минимальный заряд хладагента</li>
+          <li>долгий срок службы систем</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Минусы</h3>
+        <ul class="bullets">
+          <li>требует строгих ПБ</li>
+          <li>ограничения по размещению</li>
+          <li>повышенные требования к персоналу</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="h3">Что критично</h3>
+        <ul class="bullets">
+          <li>датчики утечки и вентиляция</li>
+          <li>аммиачные машинные отделения</li>
+          <li>обучение и регламенты</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="section section--muted" id="ref-compare">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">CO₂ или NH₃ — что выбрать</h2>
+      <p class="subhead">Выбор не “лучше/хуже”, а по задаче, масштабу и требованиям.</p>
+    </header>
+
+    <div class="table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Критерий</th>
+            <th>CO₂ (R744)</th>
+            <th>Аммиак (NH₃)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GWP</td>
+            <td>≈ 1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Безопасность</td>
+            <td>Высокая</td>
+            <td>Требует строгих ПБ</td>
+          </tr>
+          <tr>
+            <td>Рабочее давление</td>
+            <td>Очень высокое</td>
+            <td>Низкое</td>
+          </tr>
+          <tr>
+            <td>Эффективность</td>
+            <td>Высокая (зависит от климата)</td>
+            <td>Максимальная</td>
+          </tr>
+          <tr>
+            <td>Типовые объекты</td>
+            <td>Ритейл, РЦ</td>
+            <td>Промышленность</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="ref-process">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Как мы работаем с альтернативными хладагентами</h2>
+      <p class="subhead">Инженерия, безопасность и эксплуатация — в одном контуре.</p>
+    </header>
+
+    <ol class="steps">
+      <li class="steps__item">
+        <h3 class="h3">1) Анализ объекта</h3>
+        <p>Нагрузки, режимы, нормативы, требования ПБ и персонала.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">2) Выбор архитектуры</h3>
+        <p>CO₂, NH₃ или каскад. Сравнение CAPEX / OPEX / рисков.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">3) Проектирование</h3>
+        <p>Схемы, защита, автоматика, вентиляция, аварийные сценарии.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">4) Монтаж и ПНР</h3>
+        <p>Опрессовка, настройка, обучение персонала.</p>
+      </li>
+      <li class="steps__item">
+        <h3 class="h3">5) Сервис и аудит</h3>
+        <p>Регламенты, мониторинг, проверки безопасности.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="ref-audit">
+  <div class="container">
+    <div class="cta__box">
+      <h2 class="h2">Рассмотреть CO₂ или аммиак для вашего объекта</h2>
+      <p class="lead">
+        Мы честно скажем, подходит ли природный хладагент именно вам,
+        или классическая система будет рациональнее.
+      </p>
+
+      <div class="cta__actions">
+        <a class="btn btn--primary" href="{{crm_link}}">Запросить аудит</a>
+        <a class="btn btn--ghost" href="tel:{{phone}}">Позвонить</a>
+      </div>
+
+      <ul class="cta__meta">
+        <li>Нужно: тип объекта, мощности, регион</li>
+        <li>Срок первичной оценки: {{hours}} часов</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SEO / LLM -->
+<section class="section" id="ref-seo">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="h2">Коротко для поиска и ИИ</h2>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="h3">CO₂ (R744)</h3>
+        <p>
+          Природный хладагент с GWP≈1, применяется в транскритических холодильных системах,
+          безопасен для людей, требует высокой инженерной культуры из-за давлений.
+        </p>
+      </div>
+      <div class="card">
+        <h3 class="h3">Аммиак (NH₃)</h3>
+        <p>
+          Природный хладагент с GWP=0 и максимальной эффективностью,
+          используется в промышленном холоде при строгих требованиях безопасности.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
